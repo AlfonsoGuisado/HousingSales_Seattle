@@ -10,6 +10,8 @@ def unq_vals(col):
     
     # Solo procesar columnas que tengan al menos un valor único válido
     if len(unique_vals) > 0:
+        if pd.api.types.is_numeric_dtype(col):
+            unique_vals = [int(val) if val.is_integer() else val for val in unique_vals]
         # Mostrar los valores únicos, pero solo los primeros 10 y últimos 10 si hay más de 20
         if len(unique_vals) <= 20:
             print(f"{col.name}: {unique_vals}")
@@ -38,8 +40,8 @@ def histogram_boxplot(data, xlabel = None, title = None, font_scale=2, figsize=(
 
 def cat_plot(col):
      if col.dtypes == 'category':
-        fig = px.bar(col.value_counts())
-        #fig = sns.countplot(x=col)
+        #fig = px.bar(col.value_counts())
+        fig = sns.countplot(x=col)
         return(fig)
 
 def plot(col):
@@ -47,8 +49,8 @@ def plot(col):
         histogram_boxplot(col, xlabel = col.name, title = 'Distibución continua')
      else:
         plt.clf()
-        cat_plot(col).show()
-        #cat_plot(col)
+        #cat_plot(col).show()
+        cat_plot(col)
 
 from scipy import stats
 
