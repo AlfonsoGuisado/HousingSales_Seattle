@@ -174,13 +174,23 @@ def transf_objpearson(df, columnas, objetivo):
         for transf_col in transf_cleaned.columns:
             pearson_corr[transf_col] = np.corrcoef(transf_cleaned[transf_col].values, df_cleaned.values)[0, 1]
 
-        # Convertimos el diccionario en DataFrame para poder graficar con Plotly
+        # Convertimos el diccionario en DataFrame y ordenamos por coeficiente de Pearson (descendente)
         pearson_df = pd.DataFrame(list(pearson_corr.items()), columns=["Transformación", "Coeficiente de Pearson"])
+        pearson_df = pearson_df.sort_values(by="Coeficiente de Pearson", ascending=False)
 
-        # Graficamos con plotly.express para esta columna, con orientación horizontal
-        fig = px.bar(pearson_df, x="Coeficiente de Pearson", y="Transformación", 
-                     title=f"Correlación de Pearson de transformaciones de {col} respecto a {objetivo}", 
-                     orientation='h')  # Gráfico horizontal
-        fig.update_layout(xaxis_title="Coeficiente de Pearson", yaxis_title="Transformación")
-        fig.show()
+        # Crear el gráfico de barras horizontal con seaborn
+        plt.figure(figsize=(10, 6))
+        sns.barplot(
+            data=pearson_df,
+            x="Coeficiente de Pearson",
+            y="Transformación",
+            palette="viridis"
+        )
+        plt.title(f"Correlación de Pearson de transformaciones de {col} respecto a {objetivo}", fontsize=14)
+        plt.xlabel("Coeficiente de Pearson", fontsize=12)
+        plt.ylabel("Transformación", fontsize=12)
+        plt.tight_layout()
+
+        # Mostrar el gráfico
+        plt.show()
 
