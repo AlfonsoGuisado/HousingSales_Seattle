@@ -18,5 +18,5 @@ secrets.env
 # Ignorar archivos específicos
 Enviroment display.txt
 Github upload.txt
-catboost_info/
-catboost2_info/
+notebook/catboost_info/
+notebook/catboost2_info/
