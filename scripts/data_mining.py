@@ -11,7 +11,7 @@ def unq_vals(col):
     # Solo procesar columnas que tengan al menos un valor único válido
     if len(unique_vals) > 0:
         if pd.api.types.is_numeric_dtype(col):
-            unique_vals = [int(val) if val.is_integer() else val for val in unique_vals]
+            unique_vals = [int(val) if isinstance(val, (np.integer, int)) else float(val) if isinstance(val, (np.floating, float)) else val for val in unique_vals]
         # Mostrar los valores únicos, pero solo los primeros 10 y últimos 10 si hay más de 20
         if len(unique_vals) <= 20:
             print(f"{col.name}: {unique_vals}")
