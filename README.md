@@ -6,7 +6,7 @@ Unveil the dynamics of Seattle's housing market with this simple comprehensive d
 
 - **⛏️ Data Mining:** Gain insights into Seattle's housing market through data visualization and descriptive statistics.
 - **📊 Predictive Modeling:** Build and evaluate regression models to predict housing prices.
-- **🤖 Machine Learning Techniques:** Leverage ML algorithms for improved prediction accuracy.
+- **🤖 Machine Learning:** Leverage ML algorithms for improved prediction accuracy.
 
 #### 📂 Dataset:  
 The dataset includes housing sales from Seattle for the years 2014 and 2015, with various predictors such as square footage, number of bedrooms, location, and more.
