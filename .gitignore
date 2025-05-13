@@ -12,7 +12,6 @@ __pycache__/
 .vscode/
 
 # Ignorar archivos de datos grandes o sensibles
-data/raw_data/
 secrets.env
 
 # Ignorar archivos específicos
