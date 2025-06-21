@@ -17,5 +17,5 @@ secrets.env
 # Ignorar archivos específicos
 Enviroment display.txt
 Github upload.txt
-notebook/catboost_info/
-notebook/catboost2_info/
+notebooks/catboost_info/
+notebooks/Housing Sales Seattle; Predictive Modelling - Regression - copia.ipynb
