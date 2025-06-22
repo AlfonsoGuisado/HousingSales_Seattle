@@ -19,5 +19,5 @@ The dataset includes housing sales from Seattle for the years 2014 and 2015, wit
 #### 🤖 Models & Comparison:
 | **Model** | **Type** | **Predictive Variables** | **Interpretability** | **Metrics** |
 |---|---|---|---|---|
-| Linear Regression | Linear, Parametric | 6 | High | ![R²](https://img.shields.io/badge/R²-0.788-yellow) ![RMSE](https://img.shields.io/badge/RMSE-0.009-yellow) |
-| CatBoostRegressor | Ensemble, Boosting | 17 | Moderate | ![R²](https://img.shields.io/badge/R²-0.885-yellow) ![RMSE](https://img.shields.io/badge/RMSE-0.007-yellow) |
+| Linear Regression | Linear, Parametric | <div align="center"><strong> 6 | <div align="center"><strong> High | ![R²](https://img.shields.io/badge/R²-0.788-yellow) ![RMSE](https://img.shields.io/badge/RMSE-0.009-yellow) |
+| CatBoostRegressor | Ensemble, Boosting | <div align="center"><strong> 17 | <div align="center"><strong> Moderate | ![R²](https://img.shields.io/badge/R²-0.885-yellow) ![RMSE](https://img.shields.io/badge/RMSE-0.007-yellow) |
