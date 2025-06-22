@@ -17,7 +17,7 @@ The dataset includes housing sales from Seattle for the years 2014 and 2015, wit
 [![Python](https://img.shields.io/badge/Python-3.12.10-blue)](https://www.python.org/downloads/release/python-31210/) [![NumPy](https://img.shields.io/badge/NumPy-2.1.3-green)](https://numpy.org/) [![Pandas](https://img.shields.io/badge/Pandas-2.2.3-green)](https://pandas.pydata.org/) [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10.1-green)](https://matplotlib.org/) [![Seaborn](https://img.shields.io/badge/Seaborn-0.13.2-green)](https://seaborn.pydata.org/) [![Opt-Binning](https://img.shields.io/badge/OptBinning-0.20.1-green)](https://gnpalencia.org/optbinning/) [![Feature-engine](https://img.shields.io/badge/Feature--engine-1.8.3-green)](https://feature-engine.trainindata.com/en/latest/) [![Statsmodels](https://img.shields.io/badge/Statsmodels-0.14.4-green)](https://www.statsmodels.org/stable/index.html) [![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.6.1-green)](https://scikit-learn.org/) [![CatBoost](https://img.shields.io/badge/CatBoost-1.2.8-green)](https://catboost.ai/) 
 
 #### 🤖 Models & Comparison:
-| **Model** | **Predictive Variables** | **Interpretability** | **Metrics** |
+| **Model** | **Type** | **Predictive Variables** | **Interpretability** | **Metrics** |
 |---|---|---|---|
-| Linear Regression | 6 | High | [![R²](https://img.shields.io/badge/R²-0.788-yellow)] [![RMSE](https://img.shields.io/badge/RMSE-0.009-yellow)] |
-| CatBoostRegressor | 17 | Moderate | [![R²](https://img.shields.io/badge/R²-0.885-yellow)] [![RMSE](https://img.shields.io/badge/RMSE-0.007-yellow)] |
+| Linear Regression | Linear, Parametric | 6 | High | ![R²](https://img.shields.io/badge/R²-0.788-yellow) ![RMSE](https://img.shields.io/badge/RMSE-0.009-yellow) |
+| CatBoostRegressor | Ensemble, Boosting | 17 | Moderate | ![R²](https://img.shields.io/badge/R²-0.885-yellow) ![RMSE](https://img.shields.io/badge/RMSE-0.007-yellow) |
